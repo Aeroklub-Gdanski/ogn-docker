@@ -2,15 +2,19 @@
 
 ## Instalacja
 
-Instalacja zależności:
+Zainstaluj zależności:
+
+Git:
 `# apt install git`
-`$ curl -fsSL https://get.docker.com | sh`
+
+Docker:
+`# curl -fsSL https://get.docker.com | sh`
 
 Sklonuj to repozytorium na swoje urządzenie:
 
 `$ git clone https://github.com/Aeroklub-Gdanski/ogn-docker.git`
 
-Wejdź do katalogu `cd ogn-docker` i wykonaj instrukcje poniżej.
+Wejdź do katalogu (`cd ogn-docker`) i wykonaj instrukcje poniżej.
 
 ### Konfiguracja
 ~~Skopiuj `.env.example` i zmień nazwę na `.env`, a następnie odpowiednio ustaw wartości.~~
