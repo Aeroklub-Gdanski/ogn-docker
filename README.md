@@ -8,7 +8,9 @@
 
 ## Installation
 ### Configuration
-Copy `.env.example` and rename it to `.env` then set the values accordingly.
+~~Copy `.env.example` and rename it to `.env` then set the values accordingly.~~
+
+Default config for EPPR (Aeroklub Gdański) is already included. Please update any changes you make!
 
 ## Docker images
 Just run the makefile to create the docker images.
