@@ -28,7 +28,7 @@ Wystarczy uruchomić plik makefile, aby utworzyć obrazy Dockera.
 
 ## Uruchom odbiornik
 
-`$ docker compose up -d`
+`# docker compose up -d`
 
 ## Podgląd logów
 
