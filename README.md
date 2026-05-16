@@ -1,22 +1,35 @@
-# ogn-docker
+# Odbiornik OGN w Aeroklubie Gdańskim
 
-## Features
-- [x] OGN configuration with environment variables instead of libconfig files
-- [x] ogn-rf and ogn-decode do not start if configuration is invalid or incomplete
-- [x] aprs-proxy for the outgoing and incoming aprs traffic, filter scripts are written in Python
-- [x] multiarch (linux/arm/v7, linux/arm64, linux/amd64) images available for all docker containers: [dockerhub](https://hub.docker.com/u/kammermark)
+## Instalacja
 
-## Installation
-### Configuration
-~~Copy `.env.example` and rename it to `.env` then set the values accordingly.~~
+Zainstaluj zależności:
 
-Default config for EPPR (Aeroklub Gdański) is already included. Please update any changes you make!
+Git:
+`# apt install git`
 
-## Docker images
-Just run the makefile to create the docker images.
+Docker:
+`# curl -fsSL https://get.docker.com | sh`
+
+Sklonuj to repozytorium na swoje urządzenie:
+
+`$ git clone https://github.com/Aeroklub-Gdanski/ogn-docker.git`
+
+Wejdź do katalogu (`cd ogn-docker`) i wykonaj instrukcje poniżej.
+
+### Konfiguracja
+~~Skopiuj `.env.example` i zmień nazwę na `.env`, a następnie odpowiednio ustaw wartości.~~
+
+Domyślna konfiguracja dla EPPR (Aeroklub Gdański) jest już uwzględniona. Zaktualizuj wszelkie wprowadzone zmiany w pliku `.env`!
+
+## Obrazy Dockera
+Wystarczy uruchomić plik makefile, aby utworzyć obrazy Dockera.
 
 `$ make`
 
-## Start the receiver
+## Uruchom odbiornik
 
-`$ docker compose up -d`
+`# docker compose up -d`
+
+## Podgląd logów
+
+`$ docker compose logs`
